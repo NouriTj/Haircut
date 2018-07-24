@@ -2,10 +2,4 @@
 # This .gitignore file was automatically created by Microsoft(R) Visual Studio.
 ################################################################################
 
-/packages
-/Haircut/bin/Debug
-/Haircut/obj/Debug
-/Haircut.Android/bin/Debug
-/Haircut.Android/obj
-/Haircut.iOS/bin/iPhoneSimulator/Debug
-/Haircut.iOS/obj
+/.vs/Haircut/v14
