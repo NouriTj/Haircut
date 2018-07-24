@@ -3,3 +3,10 @@
 ################################################################################
 
 /.vs/Haircut/v14
+/packages
+/Haircut/Haircut/bin/Debug
+/Haircut/Haircut/obj/Debug
+/Haircut/Haircut.Android/bin/Debug
+/Haircut/Haircut.iOS/bin/iPhoneSimulator/Debug
+/Haircut/Haircut.iOS/obj
+/Haircut/Haircut.Android/obj
