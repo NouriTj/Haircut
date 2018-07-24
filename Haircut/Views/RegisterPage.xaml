@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Haircut.Views.RegisterPage"
+			 Title="S'enregistrer">
+	<ContentPage.Resources>
+		<ResourceDictionary>
+			<Color x:Key="primary">#800080</Color>
+		</ResourceDictionary>
+	</ContentPage.Resources>
+
+	<ContentPage.Content>
+		<ScrollView>
+			<StackLayout Spacing="20" VerticalOptions="CenterAndExpand" >
+
+				<Entry   x:Name="email"
+					     Margin="20,40,20,0" 
+                         HeightRequest="50" 
+                         Placeholder="Email"
+						 Keyboard="Email">
+				</Entry>
+
+				<Entry  x:Name="password"
+					    Margin="20,0,20,0" 
+                        HeightRequest="50" IsPassword="true"
+                        Placeholder="Mot de passe">
+				</Entry>
+
+				<Entry  x:Name="confirmPassword"
+					    Margin="20,0,20,0" 
+                        HeightRequest="50" IsPassword="true"
+                        Placeholder="Confirmer le mot de passe">
+				</Entry>
+
+				<StackLayout Orientation="Horizontal">
+					<Label  Text="êtes-vous un coiffeur ?" 
+                        HorizontalOptions="Center" 
+                        TextColor="{StaticResource primary}"/>
+
+					<Switch x:Name="isBarber" IsToggled="False"/>
+				</StackLayout>
+
+
+				<Button  Margin="20,0,20,0" 
+                         HeightRequest="50" 
+                         TextColor="White" 
+                         Text="S'inscrire" Clicked="Register_Clicked"
+                         BackgroundColor="{StaticResource primary}"
+                         HorizontalOptions="FillAndExpand"/>
+			</StackLayout>
+		</ScrollView>
+	</ContentPage.Content>
+</ContentPage>
